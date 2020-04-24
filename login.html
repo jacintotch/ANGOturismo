@@ -1,0 +1,53 @@
+<html>
+    <head>
+        <title>ANGOturismo</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="../css/estilogeral.css">
+        <link rel="stylesheet" href="../css/login.css">
+        <script src="https://code.jquery.com/jquery-3.5.0.min.js"></script>
+        <script src="../Js/jquery.passwordstrength.js"></script>
+        
+    </head>
+    <body>
+        <main class="barras">
+            <div class="antmenu">
+                <ul>
+                    <li><a href="../html/paginainicial.html">Menu↓</a> 
+                        <div class="rf">
+                            <div class="barra">
+                                <ul>
+                                    <li class="active"><a href="../html/Destino.html">Destino</a></li>
+                                    <li><a href="../html/maravilhas.html">7 Maravilhas +</a></li>
+                                    <li><a href="../html/cultura.html">Cultura</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="antmenu"><a href="../css/login.css">Login</a></li>
+                    <li class="antmenu"><a href="../html/sobre nós.html">Sobre nós</a></li>
+                </ul>
+            </div>
+        </main>
+        <form>
+            <img src="../MULTIMIDIA/brn.png" >
+            <div class="caixa-de-entrada">
+                <span><i class="fa fa-user-o" aria-hidden="true"></i></span>
+                <input type="text" placeholder="Nome do usuario" required>
+            </div>
+            <div class="caixa-de-entrada">
+                <span><i class="fa fa-envelope-o" aria-hidden="true"></i></span>
+                <input type="email" placeholder=" Email Id" required>
+            </div>
+            <div class="caixa-de-entrada">
+                <span><i class="fa fa-key" aria-hidden="true"></i></span>
+                <input type="password" id="password" placeholder="Palavra passe" required>
+            </div>
+            <button type="Submit"><i class="fa fa-sign" aria-hidden="true"></i>Registar</button>
+        </form>
+        <script type="text/javascript">
+            $(function() {
+                $("#password").passwordStrength();
+            });
+        </script>
+    </body>
+</html> 
