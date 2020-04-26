@@ -1,7 +1,12 @@
 <html>
     <head>
         <title>ANGOturismo</title>
-        <link rel="stylesheet" href="../css/paginas.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/paginas.css') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/login.css') }}">
+        <script src="https://code.jquery.com/jquery-3.5.0.min.js"></script>
+        <script src="{{ url_for('static', filename='js/palavrapasse.js') }}"></script>
+        
     </head>
     <body>
     
@@ -24,7 +29,7 @@
                             </div>
                         </div>
                     </li>
-                    <li class="antmenu"><a href="#">Login</a></li>
+                    <li class="antmenu"><a href="{{ url_for('login') }}">Login</a></li>
                     <li class="antmenu"><a href="#">Sobre nós</a></li>
                 </ul>
             </div>

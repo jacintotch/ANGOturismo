@@ -2,17 +2,17 @@
     <head>
         <title>ANGOturismo</title>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-        <link rel="stylesheet" href="../css/paginas.css">
-        <link rel="stylesheet" href="../css/login.css">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/paginas.css') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/login.css') }}">
         <script src="https://code.jquery.com/jquery-3.5.0.min.js"></script>
-        <script src="../Js/palavrapasse.js"></script>
+        <script src="{{ url_for('static', filename='js/palavrapasse.js') }}"></script>
         
     </head>
     <body>
         <main class="barras">
             <div class="antmenu">
                 <ul>
-                    <li><a href="#">Menu↓</a> 
+                    <li><a href="{{ url_for('index') }}">Menu↓</a> 
                         <div class="rf">
                             <div class="barra">
                                 <ul>
@@ -23,13 +23,13 @@
                             </div>
                         </div>
                     </li>
-                    <li class="antmenu"><a href="#">Login</a></li>
+                    <li class="antmenu"><a href="{{ url_for('login') }}">Login</a></li>
                     <li class="antmenu"><a href="#">Sobre nós</a></li>
                 </ul>
             </div>
         </main>
         <form>
-            <img src="../MULTIMIDIA/brn.png" >
+            <img src="{{ url_for('static', filename='Multime/brn.png') }}" >
             <div class="caixa-de-entrada">
                 <span><i class="fa fa-user-o" aria-hidden="true"></i></span>
                 <input type="text" placeholder="Nome do usuario" required>
